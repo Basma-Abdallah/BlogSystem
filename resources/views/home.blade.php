@@ -19,5 +19,8 @@
             </div>
         </div>
     </div>
+    <div class="d-none d-lg-block">
+    <a href="{{Route('index')}}" class="navbar-icon bi-person smoothscroll">Main Blog</a>
+   </div>
 </div>
 @endsection

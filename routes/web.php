@@ -1,7 +1,8 @@
 <?php
-use Illuminate\Support\Facades\Auth;
+
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostController;
+use Illuminate\Support\Facades\Auth;
 // Route::get('/', function () {
 //     return view('welcome');
 // });
@@ -15,6 +16,10 @@ Route::get('/', [PostController::class, 'index'])->name('index');
 
 Route::resource('posts', PostController::class);
 
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Auth::routes();
 

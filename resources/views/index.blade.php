@@ -5,6 +5,9 @@
 </head>
 <body>
     <h1>Blog Posts</h1>
+    <div class="d-none d-lg-block">
+    <a href="{{Route('login')}}" class="navbar-icon bi-person smoothscroll">login</a>
+   </div>
     @if(Auth::check())
     <a href="{{ route('posts.create') }}">Create New Post</a>
     @endif
